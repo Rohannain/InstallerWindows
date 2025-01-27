@@ -29,15 +29,19 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
     <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1" DirectoryOptions="3"/>
+    <ROW Directory="OpenSSLWin32_Dir" Directory_Parent="bin_Dir" DefaultDir="OPENSS~1|OpenSSL-Win32" DirectoryOptions="3"/>
+    <ROW Directory="PEM_Dir" Directory_Parent="bin_3_Dir" DefaultDir="PEM" DirectoryOptions="3"/>
     <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
     <ROW Directory="bin_1_Dir" Directory_Parent="hivemqce2024.9_Dir" DefaultDir="bin" DirectoryOptions="3"/>
     <ROW Directory="bin_2_Dir" Directory_Parent="jdk23_Dir" DefaultDir="bin" DirectoryOptions="3"/>
+    <ROW Directory="bin_3_Dir" Directory_Parent="OpenSSLWin32_Dir" DefaultDir="bin" DirectoryOptions="3"/>
     <ROW Directory="bin_Dir" Directory_Parent="APPDIR" DefaultDir="SFCONN~1|SFconnector" DirectoryOptions="3"/>
     <ROW Directory="bridge_Dir" Directory_Parent="win32_Dir" DefaultDir="bridge" DirectoryOptions="3"/>
     <ROW Directory="conf_1_Dir" Directory_Parent="jdk23_Dir" DefaultDir="conf" DirectoryOptions="3"/>
     <ROW Directory="conf_Dir" Directory_Parent="hivemqce2024.9_Dir" DefaultDir="conf" DirectoryOptions="3"/>
     <ROW Directory="configuration_Dir" Directory_Parent="examples_Dir" DefaultDir="CONFIG~1|configuration" DirectoryOptions="3"/>
     <ROW Directory="debug_Dir" Directory_Parent="logging_Dir" DefaultDir="debug" DirectoryOptions="3"/>
+    <ROW Directory="demoSRP_Dir" Directory_Parent="PEM_Dir" DefaultDir="demoSRP" DirectoryOptions="3"/>
     <ROW Directory="examples_Dir" Directory_Parent="conf_Dir" DefaultDir="examples" DirectoryOptions="3"/>
     <ROW Directory="extensions_Dir" Directory_Parent="hivemqce2024.9_Dir" DefaultDir="EXTENS~1|extensions" DirectoryOptions="3"/>
     <ROW Directory="hivemqallowallextension_Dir" Directory_Parent="extensions_Dir" DefaultDir="HIVEMQ~1|hivemq-allow-all-extension" DirectoryOptions="3"/>
@@ -142,6 +146,7 @@
     <ROW Component="AI_ExePath" ComponentId="{59E243A0-27AC-4737-AC0B-2AF9D484EEA2}" Directory_="APPDIR" Attributes="260" KeyPath="AI_ExePath"/>
     <ROW Component="APPDIR" ComponentId="{3FFDBA86-F3D3-405A-80DD-712AF6A2C531}" Directory_="APPDIR" Attributes="0"/>
     <ROW Component="AccessBridgeCallbacks.h" ComponentId="{B969703A-6C2F-4976-BFEF-D3EA7209ECBF}" Directory_="bridge_Dir" Attributes="0" KeyPath="AccessBridgeCallbacks.h" Type="0"/>
+    <ROW Component="CA.pl" ComponentId="{1283E203-6DB7-44E5-9713-1ACE5BBAB56E}" Directory_="bin_3_Dir" Attributes="0" KeyPath="CA.pl" Type="0"/>
     <ROW Component="COPYRIGHT" ComponentId="{3920F897-D453-4C0E-A8A6-34ABE6BAD798}" Directory_="java.compiler_Dir" Attributes="0" KeyPath="COPYRIGHT_1" Type="0"/>
     <ROW Component="COPYRIGHT_1" ComponentId="{6D99C505-6F7C-4F34-B608-7982113BE46B}" Directory_="java.datatransfer_Dir" Attributes="0" KeyPath="COPYRIGHT_2" Type="0"/>
     <ROW Component="COPYRIGHT_10" ComponentId="{3A6A38C0-8411-47F3-9824-EDB0D84731D8}" Directory_="java.scripting_Dir" Attributes="0" KeyPath="COPYRIGHT_12" Type="0"/>
@@ -213,6 +218,7 @@
     <ROW Component="ProductInformation" ComponentId="{8D6A4081-E82B-46AB-94FD-306C118C5047}" Directory_="APPDIR" Attributes="260" KeyPath="Version"/>
     <ROW Component="README.txt" ComponentId="{BB3A359B-1525-4C20-89B6-5F872FE4B0E8}" Directory_="hivemqce2024.9_Dir" Attributes="0" KeyPath="README.txt_1" Type="0"/>
     <ROW Component="README.txt_1" ComponentId="{DFFF530D-9D75-4CD7-8166-D733E1B6F5FB}" Directory_="policy_Dir" Attributes="0" KeyPath="README.txt_2" Type="0"/>
+    <ROW Component="acknowledgements.txt" ComponentId="{4186C22B-320B-4656-9BD6-791817148D31}" Directory_="OpenSSLWin32_Dir" Attributes="0" KeyPath="acknowledgements.txt" Type="0"/>
     <ROW Component="aes.md" ComponentId="{C7EB0BCF-9941-469C-B6E8-7F809D675123}" Directory_="java.base_Dir" Attributes="0" KeyPath="aes.md" Type="0"/>
     <ROW Component="apimswincoreconsolel110.dll" ComponentId="{242581E1-37A0-40C1-9DEC-73E67DFDFDE4}" Directory_="bin_2_Dir" Attributes="256" KeyPath="apimswincoreconsolel110.dll"/>
     <ROW Component="apimswincoreconsolel120.dll" ComponentId="{0CAD2C2B-F224-417F-BC8C-1F50BBC15268}" Directory_="bin_2_Dir" Attributes="256" KeyPath="apimswincoreconsolel120.dll"/>
@@ -260,6 +266,8 @@
     <ROW Component="awt.dll" ComponentId="{DD37E40C-12F0-4FC5-ADB4-4173B050E41D}" Directory_="bin_2_Dir" Attributes="256" KeyPath="awt.dll"/>
     <ROW Component="bcel.md" ComponentId="{E2B87692-34F7-4353-A363-AFD9D5A7C797}" Directory_="java.xml_Dir" Attributes="0" KeyPath="bcel.md" Type="0"/>
     <ROW Component="blocked.certs" ComponentId="{8777395C-22E7-414B-A5B8-A330C5C663ED}" Directory_="security_1_Dir" Attributes="0" KeyPath="blocked.certs" Type="0"/>
+    <ROW Component="cacert.srl" ComponentId="{50AE87BD-C14E-49EC-8172-C21BA9A374E0}" Directory_="PEM_Dir" Attributes="0" KeyPath="cacert.srl" Type="0"/>
+    <ROW Component="capi.dll" ComponentId="{BC759A87-AD7A-4228-AEA7-124FE294ABAF}" Directory_="bin_3_Dir" Attributes="0" KeyPath="capi.dll"/>
     <ROW Component="classes.jsa" ComponentId="{78FECF3E-6E04-4D82-9AEF-D8012B2AEDDD}" Directory_="server_Dir" Attributes="0" KeyPath="classes.jsa" Type="0"/>
     <ROW Component="classfile_constants.h" ComponentId="{4347A1E4-3D21-4CA7-A34F-5718A6C66881}" Directory_="include_Dir" Attributes="0" KeyPath="classfile_constants.h" Type="0"/>
     <ROW Component="classlist" ComponentId="{B7B3D830-B23B-4922-B51F-A3A9EE2D7A5F}" Directory_="lib_Dir" Attributes="0" KeyPath="classlist" Type="0"/>
@@ -270,6 +278,7 @@
     <ROW Component="configdiscardoldestmessages.xml" ComponentId="{140115F7-F706-4469-9621-F9B96D87E01F}" Directory_="other_Dir" Attributes="0" KeyPath="configdiscardoldestmessages.xml" Type="0"/>
     <ROW Component="configsamplemqtt.xml" ComponentId="{7D6BD6F4-2B98-4F27-BB98-DD9D9367B1DA}" Directory_="configuration_Dir" Attributes="0" KeyPath="configsamplemqtt.xml" Type="0"/>
     <ROW Component="configsamplemqtttlsclientauth.xml" ComponentId="{93FAF92C-2954-4ECC-9461-E240C9CF090D}" Directory_="tls_Dir" Attributes="0" KeyPath="configsamplemqtttlsclientauth.xml" Type="0"/>
+    <ROW Component="dasync.dll" ComponentId="{A13E4B3A-3C12-4568-AEF9-E4F472DBCDFC}" Directory_="bin_3_Dir" Attributes="0" KeyPath="dasync.dll"/>
     <ROW Component="default.jfc" ComponentId="{6B8574C4-A3D4-47D4-935C-6AA8C5C37409}" Directory_="jfr_Dir" Attributes="0" KeyPath="default.jfc" Type="0"/>
     <ROW Component="default_local.policy" ComponentId="{C942B511-9016-4197-8892-BA83B7CFB19C}" Directory_="limited_Dir" Attributes="0" KeyPath="default_local.policy" Type="0"/>
     <ROW Component="default_local.policy_1" ComponentId="{D136607E-A582-4634-918F-23D75FFA3FDA}" Directory_="unlimited_Dir" Attributes="0" KeyPath="default_local.policy_1" Type="0"/>
@@ -338,6 +347,12 @@
     <ROW Component="klist.exe" ComponentId="{7C5F2E4F-FDC3-4CE8-B62D-AA0474F0FD95}" Directory_="bin_2_Dir" Attributes="256" KeyPath="klist.exe"/>
     <ROW Component="ktab.exe" ComponentId="{94250818-7E35-4EDF-BCD3-695723698C43}" Directory_="bin_2_Dir" Attributes="256" KeyPath="ktab.exe"/>
     <ROW Component="lcms.dll" ComponentId="{0148BF33-0B39-4AB5-81E8-13DAEAA039DD}" Directory_="bin_2_Dir" Attributes="256" KeyPath="lcms.dll"/>
+    <ROW Component="legacy.dll" ComponentId="{C5CFDAC1-784A-423B-A514-B75552EDCB21}" Directory_="bin_3_Dir" Attributes="0" KeyPath="legacy.dll"/>
+    <ROW Component="libcrypto3.dll" ComponentId="{2B0A0FC4-25F9-4D63-8FE8-208FB6843548}" Directory_="bin_3_Dir" Attributes="0" KeyPath="libcrypto3.dll"/>
+    <ROW Component="libcrypto3.dll_1" ComponentId="{379D00D5-D151-4EF1-906A-C7D8B0F4428A}" Directory_="OpenSSLWin32_Dir" Attributes="0" KeyPath="libcrypto3.dll_1"/>
+    <ROW Component="libssl3.dll" ComponentId="{F125BBDD-5A1A-42B6-BD2C-4E40B73667F3}" Directory_="bin_3_Dir" Attributes="0" KeyPath="libssl3.dll"/>
+    <ROW Component="libssl3.dll_1" ComponentId="{B88A3B88-AF88-4C1B-8970-285EAA50D4CC}" Directory_="OpenSSLWin32_Dir" Attributes="0" KeyPath="libssl3.dll_1"/>
+    <ROW Component="loader_attic.dll" ComponentId="{3789A538-E962-4695-A172-7AB817687A4B}" Directory_="bin_3_Dir" Attributes="0" KeyPath="loader_attic.dll"/>
     <ROW Component="logback.xml" ComponentId="{204ACD0F-03C4-473A-861B-633AD2EC46C0}" Directory_="debug_Dir" Attributes="0" KeyPath="logback.xml" Type="0"/>
     <ROW Component="logback.xml_1" ComponentId="{62D35464-E5A0-4382-B57A-50C5BC1C9196}" Directory_="trace_Dir" Attributes="0" KeyPath="logback.xml_1" Type="0"/>
     <ROW Component="management.dll" ComponentId="{96922664-9E5B-4018-B9A5-3DE0ECB34C4F}" Directory_="bin_2_Dir" Attributes="256" KeyPath="management.dll"/>
@@ -348,16 +363,23 @@
     <ROW Component="msvcp140.dll" ComponentId="{C52BFC97-CFB9-4459-90A0-48E9EFDDF2E5}" Directory_="bin_2_Dir" Attributes="256" KeyPath="msvcp140.dll"/>
     <ROW Component="net.dll" ComponentId="{F12EEFC3-82B4-4E4F-9E0B-12CA6BB4FFAB}" Directory_="bin_2_Dir" Attributes="256" KeyPath="net.dll"/>
     <ROW Component="nio.dll" ComponentId="{0A65D10A-6422-4221-97DB-05901F9E0C7C}" Directory_="bin_2_Dir" Attributes="256" KeyPath="nio.dll"/>
+    <ROW Component="openssl.exe" ComponentId="{7FF49578-3A1F-444C-9CD0-16EB73964B66}" Directory_="bin_3_Dir" Attributes="0" KeyPath="openssl.exe"/>
+    <ROW Component="ossltest.dll" ComponentId="{919FC11E-D737-4A5D-8B86-44B042AEFE33}" Directory_="bin_3_Dir" Attributes="0" KeyPath="ossltest.dll"/>
+    <ROW Component="p_minimal.dll" ComponentId="{90C76DF9-B1C1-43EA-AA00-626189463BA2}" Directory_="bin_3_Dir" Attributes="0" KeyPath="p_minimal.dll"/>
+    <ROW Component="p_test.dll" ComponentId="{9C74AB66-201D-4800-95FD-BC86AF8584E3}" Directory_="bin_3_Dir" Attributes="0" KeyPath="p_test.dll"/>
+    <ROW Component="padlock.dll" ComponentId="{2FD62251-E9F7-434C-9D3F-B1FF4CF28197}" Directory_="bin_3_Dir" Attributes="0" KeyPath="padlock.dll"/>
     <ROW Component="prefs.dll" ComponentId="{1BC75398-BF10-4B92-861B-98E9548473AB}" Directory_="bin_2_Dir" Attributes="256" KeyPath="prefs.dll"/>
     <ROW Component="rmi.dll" ComponentId="{46C05214-C297-449C-8647-299D13FE5918}" Directory_="bin_2_Dir" Attributes="256" KeyPath="rmi.dll"/>
     <ROW Component="rmiregistry.exe" ComponentId="{1B40745E-92AA-45D6-8F21-1C14D4E2B2D2}" Directory_="bin_2_Dir" Attributes="256" KeyPath="rmiregistry.exe"/>
     <ROW Component="saproc.dll" ComponentId="{94313868-9029-42F5-9F74-AB03F025C1C8}" Directory_="bin_2_Dir" Attributes="256" KeyPath="saproc.dll"/>
     <ROW Component="serialver.exe" ComponentId="{C7ED2994-90FE-48D0-842F-B778964660F3}" Directory_="bin_2_Dir" Attributes="256" KeyPath="serialver.exe"/>
     <ROW Component="splashscreen.dll" ComponentId="{82B4771C-57FE-48EC-A088-0BACD2DEEEE1}" Directory_="bin_2_Dir" Attributes="256" KeyPath="splashscreen.dll"/>
+    <ROW Component="srp_verifier.txt" ComponentId="{D5F8E464-C0CB-4238-81FC-84D8E13B457E}" Directory_="demoSRP_Dir" Attributes="0" KeyPath="srp_verifier.txt" Type="0"/>
     <ROW Component="sspi_bridge.dll" ComponentId="{8DA7FC8E-02D5-4E0B-894C-433EB1093890}" Directory_="bin_2_Dir" Attributes="256" KeyPath="sspi_bridge.dll"/>
     <ROW Component="sunmscapi.dll" ComponentId="{81021A06-C2A0-48BD-9FB0-9E44E9E1DB27}" Directory_="bin_2_Dir" Attributes="256" KeyPath="sunmscapi.dll"/>
     <ROW Component="syslookup.dll" ComponentId="{FA78C05D-C7CB-4C74-91F4-E39D8004E588}" Directory_="bin_2_Dir" Attributes="256" KeyPath="syslookup.dll"/>
     <ROW Component="ucrtbase.dll" ComponentId="{B2B23E7F-ABE5-423E-8943-602101C14604}" Directory_="bin_2_Dir" Attributes="256" KeyPath="ucrtbase.dll"/>
+    <ROW Component="unins000.exe" ComponentId="{9B26B7E9-F156-4331-A931-B08FF9E6A22E}" Directory_="OpenSSLWin32_Dir" Attributes="0" KeyPath="unins000.exe"/>
     <ROW Component="vcruntime140.dll" ComponentId="{CCB55A81-51BC-4392-A05C-616E68E03FF8}" Directory_="bin_2_Dir" Attributes="256" KeyPath="vcruntime140.dll"/>
     <ROW Component="vcruntime140_1.dll" ComponentId="{04245097-3D23-40DC-A218-CE306F0C4B93}" Directory_="bin_2_Dir" Attributes="256" KeyPath="vcruntime140_1.dll"/>
     <ROW Component="verify.dll" ComponentId="{0F5542D1-4C89-4D0C-96A7-99EA363F72AD}" Directory_="bin_2_Dir" Attributes="256" KeyPath="verify.dll"/>
@@ -830,6 +852,58 @@
     <ROW File="release" Component_="LICENSE" FileName="release" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files\Java\jdk-23\release" SelfReg="false"/>
     <ROW File="hiveMQ.ps1" Component_="mastersubscriber1.0SNAPSHOT.jar" FileName="hiveMQ.ps1" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\Documents\hiveMQ.ps1" SelfReg="false"/>
     <ROW File="masterBroker.ps1" Component_="mastersubscriber1.0SNAPSHOT.jar" FileName="MASTER~1.PS1|masterBroker.ps1" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\Documents\masterBroker.ps1" SelfReg="false"/>
+    <ROW File="acknowledgements.txt" Component_="acknowledgements.txt" FileName="ACKNOW~1.TXT|acknowledgements.txt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\acknowledgements.txt" SelfReg="false"/>
+    <ROW File="authors.txt" Component_="acknowledgements.txt" FileName="authors.txt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\authors.txt" SelfReg="false"/>
+    <ROW File="CA.pl" Component_="CA.pl" FileName="CA.pl" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\CA.pl" SelfReg="false"/>
+    <ROW File="capi.dll" Component_="capi.dll" FileName="capi.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\capi.dll" SelfReg="false"/>
+    <ROW File="dasync.dll" Component_="dasync.dll" FileName="dasync.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\dasync.dll" SelfReg="false"/>
+    <ROW File="legacy.dll" Component_="legacy.dll" FileName="legacy.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\legacy.dll" SelfReg="false"/>
+    <ROW File="libcrypto3.dll" Component_="libcrypto3.dll" FileName="LIBCRY~1.DLL|libcrypto-3.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\libcrypto-3.dll" SelfReg="false"/>
+    <ROW File="libssl3.dll" Component_="libssl3.dll" FileName="libssl-3.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\libssl-3.dll" SelfReg="false"/>
+    <ROW File="loader_attic.dll" Component_="loader_attic.dll" FileName="LOADER~1.DLL|loader_attic.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\loader_attic.dll" SelfReg="false"/>
+    <ROW File="openssl.exe" Component_="openssl.exe" FileName="openssl.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\openssl.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="ossltest.dll" Component_="ossltest.dll" FileName="ossltest.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\ossltest.dll" SelfReg="false"/>
+    <ROW File="padlock.dll" Component_="padlock.dll" FileName="padlock.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\padlock.dll" SelfReg="false"/>
+    <ROW File="cacert.srl" Component_="cacert.srl" FileName="ca-cert.srl" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\ca-cert.srl" SelfReg="false"/>
+    <ROW File="cakey.pem" Component_="cacert.srl" FileName="ca-key.pem" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\ca-key.pem" SelfReg="false"/>
+    <ROW File="careq.pem" Component_="cacert.srl" FileName="ca-req.pem" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\ca-req.pem" SelfReg="false"/>
+    <ROW File="cert.pem" Component_="cacert.srl" FileName="cert.pem" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\cert.pem" SelfReg="false"/>
+    <ROW File="client.pem" Component_="cacert.srl" FileName="client.pem" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\client.pem" SelfReg="false"/>
+    <ROW File="srp_verifier.txt" Component_="srp_verifier.txt" FileName="SRP_VE~1.TXT|srp_verifier.txt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\demoSRP\srp_verifier.txt" SelfReg="false"/>
+    <ROW File="srp_verifier.txt.attr" Component_="srp_verifier.txt" FileName="SRP_VE~1.ATT|srp_verifier.txt.attr" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\demoSRP\srp_verifier.txt.attr" SelfReg="false"/>
+    <ROW File="dsaca.pem" Component_="cacert.srl" FileName="dsa-ca.pem" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\dsa-ca.pem" SelfReg="false"/>
+    <ROW File="dsapca.pem" Component_="cacert.srl" FileName="dsa-pca.pem" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\dsa-pca.pem" SelfReg="false"/>
+    <ROW File="dsa1024.pem" Component_="cacert.srl" FileName="dsa1024.pem" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\dsa1024.pem" SelfReg="false"/>
+    <ROW File="dsa512.pem" Component_="cacert.srl" FileName="dsa512.pem" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\dsa512.pem" SelfReg="false"/>
+    <ROW File="dsap.pem" Component_="cacert.srl" FileName="dsap.pem" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\dsap.pem" SelfReg="false"/>
+    <ROW File="pcacert.srl" Component_="cacert.srl" FileName="pca-cert.srl" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\pca-cert.srl" SelfReg="false"/>
+    <ROW File="pcakey.pem" Component_="cacert.srl" FileName="pca-key.pem" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\pca-key.pem" SelfReg="false"/>
+    <ROW File="pcareq.pem" Component_="cacert.srl" FileName="pca-req.pem" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\pca-req.pem" SelfReg="false"/>
+    <ROW File="privkey.pem" Component_="cacert.srl" FileName="privkey.pem" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\privkey.pem" SelfReg="false"/>
+    <ROW File="req.pem" Component_="cacert.srl" FileName="req.pem" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\req.pem" SelfReg="false"/>
+    <ROW File="rsa8192.pem" Component_="cacert.srl" FileName="rsa8192.pem" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\rsa8192.pem" SelfReg="false"/>
+    <ROW File="s1024key.pem" Component_="cacert.srl" FileName="s1024key.pem" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\s1024key.pem" SelfReg="false"/>
+    <ROW File="s1024req.pem" Component_="cacert.srl" FileName="s1024req.pem" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\s1024req.pem" SelfReg="false"/>
+    <ROW File="s512key.pem" Component_="cacert.srl" FileName="s512-key.pem" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\s512-key.pem" SelfReg="false"/>
+    <ROW File="s512req.pem" Component_="cacert.srl" FileName="s512-req.pem" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\s512-req.pem" SelfReg="false"/>
+    <ROW File="server.pem" Component_="cacert.srl" FileName="server.pem" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\server.pem" SelfReg="false"/>
+    <ROW File="server.srl" Component_="cacert.srl" FileName="server.srl" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\server.srl" SelfReg="false"/>
+    <ROW File="server2.pem" Component_="cacert.srl" FileName="server2.pem" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\server2.pem" SelfReg="false"/>
+    <ROW File="testCA.pem" Component_="cacert.srl" FileName="testCA.pem" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\PEM\testCA.pem" SelfReg="false"/>
+    <ROW File="progs.pl" Component_="CA.pl" FileName="progs.pl" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\progs.pl" SelfReg="false"/>
+    <ROW File="p_minimal.dll" Component_="p_minimal.dll" FileName="P_MINI~1.DLL|p_minimal.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\p_minimal.dll" SelfReg="false"/>
+    <ROW File="p_test.dll" Component_="p_test.dll" FileName="p_test.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\p_test.dll" SelfReg="false"/>
+    <ROW File="tsget.pl" Component_="CA.pl" FileName="tsget.pl" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\bin\tsget.pl" SelfReg="false"/>
+    <ROW File="changes.txt" Component_="acknowledgements.txt" FileName="changes.txt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\changes.txt" SelfReg="false"/>
+    <ROW File="c_rehash.pl" Component_="acknowledgements.txt" FileName="c_rehash.pl" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\c_rehash.pl" SelfReg="false"/>
+    <ROW File="libcrypto3.dll_1" Component_="libcrypto3.dll_1" FileName="LIBCRY~1.DLL|libcrypto-3.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\libcrypto-3.dll" SelfReg="false"/>
+    <ROW File="libssl3.dll_1" Component_="libssl3.dll_1" FileName="libssl-3.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\libssl-3.dll" SelfReg="false"/>
+    <ROW File="license.txt" Component_="acknowledgements.txt" FileName="license.txt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\license.txt" SelfReg="false"/>
+    <ROW File="news.txt" Component_="acknowledgements.txt" FileName="news.txt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\news.txt" SelfReg="false"/>
+    <ROW File="readme.txt_3" Component_="acknowledgements.txt" FileName="readme.txt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\readme.txt" SelfReg="false"/>
+    <ROW File="start.bat" Component_="acknowledgements.txt" FileName="start.bat" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\start.bat" SelfReg="false"/>
+    <ROW File="unins000.dat" Component_="acknowledgements.txt" FileName="unins000.dat" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\unins000.dat" SelfReg="false"/>
+    <ROW File="unins000.exe" Component_="unins000.exe" FileName="unins000.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\Program Files (x86)\OpenSSL-Win32\unins000.exe" SelfReg="false" DigSign="true"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
     <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
@@ -1166,6 +1240,24 @@
     <ROW Feature_="MainFeature" Component_="default.jfc"/>
     <ROW Feature_="MainFeature" Component_="blocked.certs"/>
     <ROW Feature_="MainFeature" Component_="LICENSE"/>
+    <ROW Feature_="MainFeature" Component_="acknowledgements.txt"/>
+    <ROW Feature_="MainFeature" Component_="CA.pl"/>
+    <ROW Feature_="MainFeature" Component_="capi.dll"/>
+    <ROW Feature_="MainFeature" Component_="dasync.dll"/>
+    <ROW Feature_="MainFeature" Component_="legacy.dll"/>
+    <ROW Feature_="MainFeature" Component_="libcrypto3.dll"/>
+    <ROW Feature_="MainFeature" Component_="libssl3.dll"/>
+    <ROW Feature_="MainFeature" Component_="loader_attic.dll"/>
+    <ROW Feature_="MainFeature" Component_="openssl.exe"/>
+    <ROW Feature_="MainFeature" Component_="ossltest.dll"/>
+    <ROW Feature_="MainFeature" Component_="padlock.dll"/>
+    <ROW Feature_="MainFeature" Component_="cacert.srl"/>
+    <ROW Feature_="MainFeature" Component_="srp_verifier.txt"/>
+    <ROW Feature_="MainFeature" Component_="p_minimal.dll"/>
+    <ROW Feature_="MainFeature" Component_="p_test.dll"/>
+    <ROW Feature_="MainFeature" Component_="libcrypto3.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="libssl3.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="unins000.exe"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
     <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
